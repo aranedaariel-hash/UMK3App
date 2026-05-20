@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultimate Mortal Kombat 3 — Move List</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- PANTALLA DE SELECCIÓN -->
+  <div id="selectScreen" class="select-screen">
+    <div class="select-logo-wrap">
+      <img class="select-logo" src="assets/Logo.webp" alt="Ultimate Mortal Kombat 3">
+    </div>
+    <div class="select-title">SELECT YOUR FIGHTER</div>
+    <div class="select-grid" id="selectGrid"></div>
+  </div>
+
+  <!-- APP PRINCIPAL (oculta al inicio) -->
+  <div id="appScreen" class="app-screen hidden">
+
+    <header class="header">
+      <button class="header-back-btn" id="backToSelect">← VOLVER</button>
+    <img class="header-logo-img" src="assets/Logo.webp" alt="Ultimate Mortal Kombat 3">
+      <div class="drip-bar">
+        <div class="drip"></div><div class="drip"></div><div class="drip"></div>
+        <div class="drip"></div><div class="drip"></div><div class="drip"></div>
+        <div class="drip"></div>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="sidebar-header">— Seleccioná tu luchador —</div>
+        <div class="char-list" id="charList"></div>
+      </aside>
+      <main class="main" id="mainPanel">
+        <div class="placeholder">
+          <div class="placeholder-skull">💀</div>
+          <div class="placeholder-text">— Elegí un luchador —</div>
+        </div>
+      </main>
+    </div>
+
+    <div class="legend">
+      <div class="leg-item"><span class="key btn-ga">GA</span> Golpe Alto</div>
+      <div class="leg-item"><span class="key btn-gb">GB</span> Golpe Bajo</div>
+      <div class="leg-item"><span class="key btn-pa">PA</span> Patada Alta</div>
+      <div class="leg-item"><span class="key btn-pb">PB</span> Patada Baja</div>
+      <div class="leg-item"><span class="key btn-bl">BL</span> Block</div>
+      <div class="leg-item"><span class="key btn-cr">CR</span> Carrera</div>
+      <div class="leg-item"><span class="key dir">↑↓←→</span> Dirs</div>
+      <div class="leg-item"><span class="key dir">↗↙</span> Diags</div>
+      <div class="leg-item back-btn" id="backBtn">← VOLVER</div>
+    </div>
+
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
